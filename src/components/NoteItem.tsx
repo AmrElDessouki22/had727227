@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from 'react';
-import { useNotes } from '../context/NotesContext';
+import { useNotes } from '../contexts/NotesContext';
 
 const NoteItem = ({ note, index }) => {
   const { editNote } = useNotes();
