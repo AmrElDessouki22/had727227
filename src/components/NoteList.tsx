@@ -1,17 +1,17 @@
 "use client";
 
-import { useNotes } from '../contexts/NotesContext';
-import NoteItem from './NoteItem';
-import { useState } from 'react';
+import React from 'react';
 
-const NoteList = () => {
-  const { notes } = useNotes();
+const NoteList = ({ notes, onEdit }) => {
   return (
-    <div>
-      {notes.map((note, index) => (
-        <NoteItem key={index} note={note} index={index} />
+    <ul>
+      {notes.map(note => (
+        <li key={note.id}>
+          {note.content}
+          <button onClick={() => onEdit(note.id)}>Edit</button>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 };
 
