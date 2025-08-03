@@ -1,4 +1,4 @@
-import { NotesProvider } from '../context/NotesContext';
+import { NotesProvider } from '../contexts/NotesContext';
 
 export default function RootLayout({ children }) {
   return (
