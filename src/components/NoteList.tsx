@@ -1,6 +1,6 @@
 "use client";
 
-import { useNotes } from '../context/NotesContext';
+import { useNotes } from '../contexts/NotesContext';
 import NoteItem from './NoteItem';
 import { useState } from 'react';
 
